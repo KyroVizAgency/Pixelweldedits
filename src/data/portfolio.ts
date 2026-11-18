@@ -1,0 +1,301 @@
+import { PortfolioWork, StudioService } from '../types/studio';
+
+export const BRAND_NAME = 'Pixelweldedits';
+
+export const BRAND_LOGO_SRC =
+  '/assets/aistudio/WhatsApp_Image_2026-11-18_at_4.11.38_PM_737590cf.jpeg';
+
+export const PORTFOLIO_WORKS: PortfolioWork[] = [
+  // Folder 1: SaaS & YouTube (3 videos)
+  {
+    id: 'google-ai-edge-saas',
+    index: '01',
+    title: 'Google AI Edge — SaaS',
+    category: 'Commercial',
+    formatLabel: 'SaaS Motion Film · 16:9',
+    aspectClass: 'aspect-[16/9]',
+    gridSpanClass: 'lg:col-span-7',
+    aspectRatioValue: '16:9 Studio UHD',
+    timecodeDuration: '00:00:15:00',
+    durationSeconds: 15,
+    image: '/src/assets/images/reel_commercial_optics_rig_1795010576083.jpg',
+    imageAlt: 'Google AI Edge SaaS motion graphics interface and feature showcase edit',
+    video: '/assets/aistudio/Google_Ai_edje_SAAS_d4663d48.mp4',
+    logline:
+      'High-gloss SaaS product launch edit combining fluid UI card choreography, radial ambient lighting, and crisp kinetic callouts.',
+    editorialBreakdown: {
+      pacing: 'Beat-locked UI transitions with spring ease curves and zero dead frames',
+      colorPipeline: 'Deep obsidian canvas calibrated against violet-cobalt UI highlights',
+      soundDesign: 'Tactile UI clicks, risers, and tight percussive hit markers',
+      deliverables: ['16:9 4K Launch Master', 'Modular UI Asset Pack', 'Motion Stems'],
+    },
+  },
+  {
+    id: 'viral-creator-youtube',
+    index: '02',
+    title: 'Viral Growth — YouTube',
+    category: 'YouTube',
+    formatLabel: 'YouTube Retention Edit · 16:9',
+    aspectClass: 'aspect-[16/9]',
+    gridSpanClass: 'lg:col-span-7',
+    aspectRatioValue: '16:9 Widescreen',
+    timecodeDuration: '00:00:22:00',
+    durationSeconds: 22,
+    image: '/src/assets/images/reel_documentary_studio_frame_1795010578129.jpg',
+    imageAlt: 'YouTube creator retention edit with animated analytics and glowing motion cards',
+    video: '/assets/aistudio/1000066070_f14dce1e.mp4',
+    logline:
+      'Long-form style YouTube hook and pacing structure engineered with live metric counters, spatial cards, and voice-first clarity.',
+    editorialBreakdown: {
+      pacing: 'High-retention cold open with rhythmic graphic inserts every 3 seconds',
+      colorPipeline: 'Clean skin-tone balance contrasted with deep midnight motion cards',
+      soundDesign: 'Broadcast vocal polish, crisp swoosh transitions, subtle bed',
+      deliverables: ['16:9 YouTube Master', 'Animated Counter Pack', 'Chapter Cutdowns'],
+    },
+  },
+  {
+    id: 'saas-showcase-cut',
+    index: '03',
+    title: 'SaaS Edit Showcase',
+    category: 'Commercial',
+    formatLabel: 'Motion UI Showcase · 9:16',
+    aspectClass: 'aspect-[9/16]',
+    gridSpanClass: 'lg:col-span-5',
+    aspectRatioValue: '9:16 Showcase',
+    timecodeDuration: '00:00:13:00',
+    durationSeconds: 13,
+    image: '/src/assets/images/reel_commercial_optics_rig_1795010576083.jpg',
+    imageAlt: 'Framed SaaS motion graphics showcase reel edited by Pixelweldedits',
+    video: '/assets/aistudio/Project_-2E51C3F-_be338a85.mp4',
+    logline:
+      'Editorial breakdown framing a widescreen SaaS UI animation inside a clean minimal showcase stage.',
+    editorialBreakdown: {
+      pacing: 'Synchronized UI zooms anchored on rhythmic bass drops',
+      colorPipeline: 'Crisp high-contrast white backdrop framing deep gradient motion graphics',
+      soundDesign: 'Tight transient SFX synced to feature card reveals',
+      deliverables: ['9:16 Portfolio Reel', 'Clean Frame Overlay', '60fps Master'],
+    },
+  },
+
+  // Folder 2: Brand & Agency Reels (3 portrait 9:16 videos)
+  {
+    id: 'agency-model-2026',
+    index: '04',
+    title: '2026 Agency Motion',
+    category: 'Short-Form',
+    formatLabel: 'Before / After Reel · 9:16',
+    aspectClass: 'aspect-[9/16]',
+    gridSpanClass: 'lg:col-span-5',
+    aspectRatioValue: '9:16 Vertical',
+    timecodeDuration: '00:00:21:00',
+    durationSeconds: 21,
+    image: '/src/assets/images/reel_vertical_kinetic_portrait_1795010576218.jpg',
+    imageAlt: 'Before and after agency talking-head reel with dark amber glowing icons',
+    video: '/assets/aistudio/1000066084_87804332.mp4',
+    logline:
+      'Before-and-after transformation turning raw studio talking-head footage into dark-amber motion icon storytelling.',
+    editorialBreakdown: {
+      pacing: 'Fast spoken-word cutdowns punctuated by illuminated icon clusters',
+      colorPipeline: 'Warm amber accents graded against deep shadow vignettes',
+      soundDesign: 'Pop transitions, crisp vocal compression, subtle whoosh layers',
+      deliverables: ['9:16 Vertical 60fps', 'Raw-to-Final Split Frame', 'Clean Captions'],
+    },
+  },
+  {
+    id: 'brand-design-collage',
+    index: '05',
+    title: 'Brand Design Growth',
+    category: 'Short-Form',
+    formatLabel: 'Mixed-Media Reel · 9:16',
+    aspectClass: 'aspect-[9/16]',
+    gridSpanClass: 'lg:col-span-5',
+    aspectRatioValue: '9:16 Vertical',
+    timecodeDuration: '00:00:13:00',
+    durationSeconds: 13,
+    image: '/src/assets/images/reel_vertical_kinetic_portrait_1795010576218.jpg',
+    imageAlt: 'Before and after brand designer case-study reel with paper collage and UI counters',
+    video: '/src/assets/aistudio/1000066082_e0935483.mp4',
+    logline:
+      'Tactile mixed-media reel blending paper film strips, live revenue UI counters, and kinetic brand storytelling.',
+    editorialBreakdown: {
+      pacing: 'Frame-by-frame tactile collage transitions matched to spoken milestones',
+      colorPipeline: 'Cool cobalt UI panels contrasted with analog paper grain overlays',
+      soundDesign: 'Shutter clicks, paper tear foley, rising counter ticks',
+      deliverables: ['9:16 Reels Master', 'Custom Collage Assets', 'Hook Variant'],
+    },
+  },
+  {
+    id: 'custom-home-build',
+    index: '06',
+    title: 'Custom Home Build',
+    category: 'Short-Form',
+    formatLabel: 'Real Estate Reel · 9:16',
+    aspectClass: 'aspect-[9/16]',
+    gridSpanClass: 'lg:col-span-5',
+    aspectRatioValue: '9:16 Vertical',
+    timecodeDuration: '00:00:30:00',
+    durationSeconds: 30,
+    image: '/src/assets/images/reel_vertical_kinetic_portrait_1795010576218.jpg',
+    imageAlt: 'Real estate video editing before and after transformation with architectural bento cards',
+    video: '/assets/aistudio/1000066081_78296e78.mp4',
+    logline:
+      'Architectural walkthrough edit pairing clean bento photo grids, kinetic checklists, and price-point motion typography.',
+    editorialBreakdown: {
+      pacing: 'Conversational hook flowing into visual B-roll card callouts',
+      colorPipeline: 'Balanced daylight interior exposure with crisp monochrome UI badges',
+      soundDesign: 'Room-tone cleanups, soft toggle clicks, rhythmic background pulse',
+      deliverables: ['9:16 Property Reel', 'Bento Card Templates', 'Caption Track'],
+    },
+  },
+
+  // Folder 3: Creator & Growth Reels (3 + 1 extra queued portrait 9:16 videos)
+  {
+    id: 'lead-engine-story',
+    index: '07',
+    title: 'Lead Engine Story',
+    category: 'Short-Form',
+    formatLabel: 'Ad Story Reel · 9:16',
+    aspectClass: 'aspect-[9/16]',
+    gridSpanClass: 'lg:col-span-5',
+    aspectRatioValue: '9:16 Vertical',
+    timecodeDuration: '00:00:57:00',
+    durationSeconds: 57,
+    image: '/src/assets/images/reel_vertical_kinetic_portrait_1795010576218.jpg',
+    imageAlt: 'Before and after contractor marketing edit with custom Instagram and revenue graphics',
+    video: '/assets/aistudio/1000066083_90914f7b.mp4',
+    logline:
+      'High-converting B2B ad narrative layering Instagram UI callouts, map pins, and kinetic captions over crisp talking-head footage.',
+    editorialBreakdown: {
+      pacing: 'Dynamic pattern interrupts alternating full-bleed speaker and dark motion boards',
+      colorPipeline: 'Punchy warm-blue studio contrast over deep shadow backgrounds',
+      soundDesign: 'UI pop foley, dialogue clarity pass, subtle tension bed',
+      deliverables: ['9:16 Ad Master', 'Before/After Showcase', 'Subtitled Cut'],
+    },
+  },
+  {
+    id: 'content-os-breakdown',
+    index: '08',
+    title: 'Content OS Breakdown',
+    category: 'Short-Form',
+    formatLabel: 'Audio-to-Video Edit · 9:16',
+    aspectClass: 'aspect-[9/16]',
+    gridSpanClass: 'lg:col-span-5',
+    aspectRatioValue: '9:16 Vertical',
+    timecodeDuration: '00:00:37:00',
+    durationSeconds: 37,
+    image: '/src/assets/images/reel_vertical_kinetic_portrait_1795010576218.jpg',
+    imageAlt: 'Audio-to-final video edit featuring role breakdown cards and pocket watch B-roll',
+    video: '/assets/aistudio/1000066077_ee088c93.mp4',
+    logline:
+      'From bare voiceover track to polished agency reel—featuring role comparison cards, pocket-watch B-roll, and search bar CTA.',
+    editorialBreakdown: {
+      pacing: 'Sentence-driven visual metaphors maintaining continuous viewer momentum',
+      colorPipeline: 'Warm cream UI cards balanced with natural portrait grading',
+      soundDesign: 'Clock tick foley, mechanical keystrokes, upbeat pulse',
+      deliverables: ['9:16 Vertical Reel', 'B-Roll Card System', 'Audio Master'],
+    },
+  },
+  {
+    id: 'algorithm-reach-cut',
+    index: '09',
+    title: 'Algorithm & Reach Cut',
+    category: 'Short-Form',
+    formatLabel: 'Creator Growth Reel · 9:16',
+    aspectClass: 'aspect-[9/16]',
+    gridSpanClass: 'lg:col-span-5',
+    aspectRatioValue: '9:16 Vertical',
+    timecodeDuration: '00:00:32:00',
+    durationSeconds: 32,
+    image: '/src/assets/images/reel_vertical_kinetic_portrait_1795010576218.jpg',
+    imageAlt: 'Before and after social creator podcast reel with follower dial gauges and dark chart UI',
+    video: '/assets/aistudio/1000066080_5673dbea.mp4',
+    logline:
+      'Podcast-clip transformation integrating 3D phone hand mockups, glowing dial gauges, and neon-rimmed analytics charts.',
+    editorialBreakdown: {
+      pacing: 'Zero-fluff dialogue tighten with custom data visualization cutaways',
+      colorPipeline: 'Clean outdoor portrait grade paired with dark obsidian UI panels',
+      soundDesign: 'Digital dial sweeps, cursor clicks, rhythmic sub accents',
+      deliverables: ['9:16 Podcast Clip', 'Animated Metric Graphics', '60fps Export'],
+    },
+  },
+  {
+    id: 'editorial-chart-edit',
+    index: '10',
+    title: 'Editorial Chart Edit',
+    category: 'Short-Form',
+    formatLabel: 'Motion Data Reel · 9:16',
+    aspectClass: 'aspect-[9/16]',
+    gridSpanClass: 'lg:col-span-5',
+    aspectRatioValue: '9:16 Vertical',
+    timecodeDuration: '00:00:32:00',
+    durationSeconds: 32,
+    image: '/src/assets/images/reel_vertical_kinetic_portrait_1795010576218.jpg',
+    imageAlt: 'Audio-to-video creator edit with animated bar graphs and mosaic grid overlays',
+    video: '/assets/aistudio/1000066078_0cada49b.mp4',
+    logline:
+      'Alternative editorial motion pass highlighting glowing light trails, checkerboard photo mosaics, and rising amber bar charts.',
+    editorialBreakdown: {
+      pacing: 'Clean light-streak transitions bridging live conversation and clean data slides',
+      colorPipeline: 'Warm amber chart accents balanced against editorial cream canvases',
+      soundDesign: 'Light trail whooshes, chart rise tones, dialogue leveling',
+      deliverables: ['9:16 Vertical Master', 'Data Chart Package', 'Clean Audio Mix'],
+    },
+  },
+];
+
+export const STUDIO_SERVICES: StudioService[] = [
+  {
+    index: '01',
+    title: 'Short-form Video Editing',
+    summary:
+      'Tight, purposeful vertical and square edits engineered to hold attention from the very first frame without relying on noisy template clutter.',
+    craftFocus: 'Pattern-interrupt hooks, clean kinetic captions, transient-locked pacing',
+    formats: ['9:16 Vertical', '4:5 Feed', '1:1 Square'],
+    cadence: '15s – 60s',
+  },
+  {
+    index: '02',
+    title: 'Reels & Social Media Content',
+    summary:
+      'Cohesive social storytelling tailored for creators and modern brands—balancing visual polish, music-driven rhythm, and platform-native legibility.',
+    craftFocus: 'Scroll-stopping cold opens, visual continuity, custom sound accents',
+    formats: ['Instagram Reels', 'YouTube Shorts', 'Cross-Platform Packages'],
+    cadence: '15s – 90s',
+  },
+  {
+    index: '03',
+    title: 'Cinematic Video Editing',
+    summary:
+      'Narrative-first assembly where every cut earns its place. Rhythm, color mood, and sound atmosphere work together to create lasting emotional weight.',
+    craftFocus: 'Story structure, J/L-cut dialogue flow, filmic color grading & soundscapes',
+    formats: ['2.39:1 Scope', '16:9 4K', '4:3 Editorial'],
+    cadence: '1m – 15m+',
+  },
+  {
+    index: '04',
+    title: 'Promotional Videos',
+    summary:
+      'High-impact launch films and brand spot edits that present products, spaces, and ideas with clarity, restraint, and visual authority.',
+    craftFocus: 'Product hero framing, message clarity, multi-aspect delivery',
+    formats: ['Campaign Hero Spot', 'Landing Page Loops', 'Social Cutdowns'],
+    cadence: '30s – 2m',
+  },
+  {
+    index: '05',
+    title: 'Motion Graphics',
+    summary:
+      'Editorial typography, clean UI/product callouts, and bespoke animated title systems integrated seamlessly into live-action footage.',
+    craftFocus: 'Kinetic typography, lower-third systems, tracked 2D/3D overlays',
+    formats: ['Title Sequences', 'Data & UI Callouts', 'Brand Motion Kits'],
+    cadence: 'Modular Systems',
+  },
+  {
+    index: '06',
+    title: 'YouTube Video Editing',
+    summary:
+      'End-to-end long-form editing for documentary, commentary, and creator channels—turning raw A-roll and B-roll into cohesive, watchable episodes.',
+    craftFocus: 'Retention pacing, chapter transitions, B-roll storytelling, clean audio mix',
+    formats: ['16:9 4K Episodes', 'Intro Hooks', 'Trailer Cutdowns'],
+    cadence: '6m – 30m+',
+  },
+];

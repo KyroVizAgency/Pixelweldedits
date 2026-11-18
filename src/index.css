@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-canvas: #050a14;
+  --color-surface: #0b1528;
+  --color-elevated: #101e38;
+  --color-border-subtle: #1d3054;
+  --color-text-primary: #f4f7fc;
+  --color-text-secondary: #8fa3c4;
+  --color-blue-primary: #1666c5;
+  --color-blue-electric: #3898ec;
+  --color-blue-glow: #5eb7ff;
+}
+
+:root {
+  color-scheme: dark;
+  --bg-canvas: #050a14;
+  --bg-surface: #0b1528;
+  --bg-elevated: #101e38;
+  --border-subtle: #1d3054;
+  --text-primary: #f4f7fc;
+  --text-secondary: #8fa3c4;
+  --blue-primary: #1666c5;
+  --blue-electric: #3898ec;
+  --blue-glow: #5eb7ff;
+}
+
+@layer base {
+  html {
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+/* Custom cursor hiding only on fine pointer devices when active */
+@media (hover: hover) and (pointer: fine) {
+  body.pw-custom-cursor-active,
+  body.pw-custom-cursor-active a,
+  body.pw-custom-cursor-active button,
+  body.pw-custom-cursor-active [role="button"],
+  body.pw-custom-cursor-active input,
+  body.pw-custom-cursor-active textarea,
+  body.pw-custom-cursor-active select {
+    cursor: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  body.pw-custom-cursor-active,
+  body.pw-custom-cursor-active * {
+    cursor: auto !important;
+  }
+}
+
+/* Subtle editorial marquee animation */
+@keyframes pw-marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-pw-marquee {
+  animation: pw-marquee 38s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-pw-marquee {
+    animation: none;
+  }
+}
+
+/* Subtle cinema reel Ken Burns drift on hover */
+@keyframes pw-reel-pan {
+  0% {
+    transform: scale(1.03) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: scale(1.08) translate3d(-1.2%, -0.8%, 0);
+  }
+  100% {
+    transform: scale(1.03) translate3d(0, 0, 0);
+  }
+}
+
+.group:hover .pw-reel-motion {
+  animation: pw-reel-pan 9s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .group:hover .pw-reel-motion {
+    animation: none;
+  }
+}
